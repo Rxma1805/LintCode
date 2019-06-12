@@ -1,4 +1,5 @@
 KMP 讲解 [https://blog.csdn.net/v_july_v/article/details/7041827]    
+最长公共前后缀 [https://www.zhihu.com/question/21474082]    
 
 For a given source string and a target string, you should output the first index(from 0) of target string in source string.
 
