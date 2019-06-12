@@ -1,0 +1,2 @@
+# LintCode
+arithmetic enhance
