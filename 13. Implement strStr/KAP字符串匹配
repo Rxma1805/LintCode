@@ -1,0 +1,43 @@
+class Solution:
+    """
+    @param source: 
+    @param target: 
+    @return: return the index
+    """
+    def strStr(self, source, target):
+        if target == "":
+            return 0
+        if source == "":
+            return -1
+        next_array = [0]*len(target)
+        self.Next(target,next_array)
+        
+        i,j=0,0
+        
+        while i < len(source) and j < len(target):
+            if j == -1 or source[i] == target[j]:
+                i+=1
+                j+=1
+            else:
+                j = next_array[j]
+        
+        if  j >= len(target):
+            
+            return i - len(target)
+        else:
+            return -1
+        
+    
+    def Next(self,target,next_array):
+        j=0
+        k=-1
+        next_array[0] = -1
+        while j < len(target)-1:
+            if k == -1 or target[j] == target[k]:
+                j += 1
+                k += 1
+                next_array[j] = k
+            else:
+                #当前匹配失败，则要往前匹配前面的
+                k = next_array[k]
+        
