@@ -13,7 +13,7 @@ http://baike.baidu.com/view/2020307.htm
 
 
 
-if A[i] == B[j]:
-   dp[i+1][j+1] = dp[i][j] + 1
-else:
-  dp[i+1][j+1] = max(dp[i+1][j],dp[i][j+1])
+if A[i] == B[j]:    
+   dp[i+1][j+1] = dp[i][j] + 1    
+else:    
+  dp[i+1][j+1] = max(dp[i+1][j],dp[i][j+1])    
