@@ -11,3 +11,12 @@ Input:"aba"
 Output:"aba"  
 挑战  
 O(n2) time is acceptable. Can you do it in O(n) time.  
+
+
+
+解题      [https://blog.csdn.net/lighthear/article/details/79602127]
+
+枚举法 Enumeration - O(n^2)
+Manacher [https://segmentfault.com/a/1190000003914228]  O(n)
+
+
